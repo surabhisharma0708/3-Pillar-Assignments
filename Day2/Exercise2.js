@@ -28,3 +28,10 @@ else
 {
     console.log("c and d are already equal");
 }
+//5
+console.log('python'.includes('on'));
+console.log('jargon'.includes('on'));
+//6
+let s ='I hope this course is not full of jargon';
+console.log(s.includes('jargon'));
+//7
