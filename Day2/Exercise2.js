@@ -35,3 +35,18 @@ console.log('jargon'.includes('on'));
 let s ='I hope this course is not full of jargon';
 console.log(s.includes('jargon'));
 //7
+let  ran = Math.floor(Math.random()*100)+1;
+console.log(ran);
+//8
+function randomNumber(min,max)
+{
+    return Math.random*(max-min)+min;
+} 
+console.log(randomNumber(50,100));
+//9
+console.log(randomNumber(0,255));
+//10
+let j ='Javascript';
+let x = Math.floor(randomNumber(0,j.length));
+console.log(j.charAt(x));
+
