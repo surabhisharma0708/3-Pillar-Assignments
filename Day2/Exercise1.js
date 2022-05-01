@@ -16,3 +16,18 @@ console.log(challenge.substring(3,challenge.length));
 console.log(challenge.includes('Script'));
 //9
 console.log(challenge.split());
+//10
+console.log(challenge.split(' '));
+//11
+let company = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+console.log(company.split(','));
+//12
+//13
+//14
+//15
+//1
+//17
+//18
+//19
+//20
+//21
