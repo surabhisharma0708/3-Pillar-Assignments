@@ -41,3 +41,13 @@ console.log(s.search('because'));
 //20
 console.log(challenge.trim());
 //21
+console.log(challenge.startsWith('30'));
+//22
+console.log(challenge.endsWith('Javascript'));
+//23
+console.log(challenge.match('a'));
+//24
+let t = '30';
+console.log(t.concat('Days of Javascript'));
+//25
+console.log(challenge.repeat(2));
