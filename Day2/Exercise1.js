@@ -37,6 +37,7 @@ console.log(s.indexOf('because'));
 //18
 console.log(s.lastIndexOf('because'));
 //19
-
+console.log(s.search('because'));
 //20
+console.log(challenge.trim());
 //21
