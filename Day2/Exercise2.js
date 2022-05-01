@@ -49,4 +49,6 @@ console.log(randomNumber(0,255));
 let j ='Javascript';
 let x = Math.floor(randomNumber(0,j.length));
 console.log(j.charAt(x));
-
+//11
+console.log('1 1 1 1 \n2 1 2 4 8 \n3 1 3 9 27 \n4 1 4 16 64 \n5 1 5 25 125');
+//12
