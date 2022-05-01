@@ -15,4 +15,16 @@ else
     console.log('a and b are already equal');
 }
 
-//
+//4
+let c =parseFloat('9.8');
+let d = 10;
+
+if(c===d)
+{
+    c = Number(Math.ceil(c));
+    console.log('Now, c and d are equal'); 
+}
+else
+{
+    console.log("c and d are already equal");
+}
