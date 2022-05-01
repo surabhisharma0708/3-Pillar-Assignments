@@ -22,10 +22,15 @@ console.log(challenge.split(' '));
 let company = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
 console.log(company.split(','));
 //12
+console.log(challenge.replace('Javascript','Python'));
 //13
+console.log(challenge.charAt(15));
 //14
+console.log(challenge.charCodeAt('11'));
 //15
-//1
+console.log(challenge.indexOf('a'));
+//16
+
 //17
 //18
 //19
