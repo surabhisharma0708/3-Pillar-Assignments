@@ -30,9 +30,13 @@ console.log(challenge.charCodeAt('11'));
 //15
 console.log(challenge.indexOf('a'));
 //16
-
+console.log(challenge.lastIndexOf('a'));
 //17
+let s ='You cannot end a sentence with because because because is a conjunction';
+console.log(s.indexOf('because'));
 //18
+console.log(s.lastIndexOf('because'));
 //19
+
 //20
 //21
