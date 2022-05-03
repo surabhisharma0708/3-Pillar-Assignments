@@ -28,7 +28,7 @@ console.log(circum);
 // y=2x-2;
 y=mx+c;
 
-let slop1 = ;
+let slop1 = 0;
 //6.
 let x1=2;
 let x2=6;
@@ -39,3 +39,61 @@ console.log(slop);
 
 //7.
 
+//8.
+let y = x**2+6*x+9;
+let aa = 1;
+let bb = 6;
+let c = 9;
+let t = (-bb-Math.sqrt(bb**2-4*aa*c))/2*aa;
+console.log(t);
+
+//9.
+let hours = prompt("Enter hours");
+let rate = prompt("Enter rate");
+let earning = hours* rate;
+console.log(earning);
+
+//10.
+let name = prompt('Enter your name');
+
+if(name.length>7)
+{
+    console.log("Name is long");
+}
+else
+{
+    console.log("Name is short");
+}
+
+//11.
+let f_name ='Asabeneh';
+let l_name ='Yetayeh';
+
+console.log(`Your first name, ${f_name} is longer than your family name,${l_name} `);
+
+//12.
+let myAge = 250;
+let yourAge = 25;
+console.log(`I am ${myAge-yourAge} years older than you.`);
+
+//13.
+
+let year = prompt("Enter year");
+let age = 2020-year;
+console.log(`You are ${age}. You are old enough to drive`);
+
+//14.
+let num_years = prompt('Enter number of years you live');
+
+
+//15.
+let date= new Date();
+let yearr = date.getFullYear();
+let month = date.getMonth();
+let datee = date.getDate();
+let hourss = date.getHours();
+let minu = date.getMinutes();
+
+console.log(`${yearr}-${month}-${datee}  ${hourss}:${minu}`);
+console.log(`${datee}-${month}-${yearr}  ${hourss}:${minu}`);
+console.log(`${yearr}/${month}/${yearr}  ${hourss}:${minu}`);
