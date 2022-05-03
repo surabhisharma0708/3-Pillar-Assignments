@@ -39,3 +39,13 @@ else if(season==="June" ||season==="July" || season==="August")
 {
     console.log("The season is Summer");
 }
+
+//3
+let day = prompt("What is the today??");
+if(day==="Saturday"|| day==="Sunday")
+{
+    console.log(`${day} is a Weekend.`);
+}
+else{
+    console.log(`${day} is a working day.`)
+}
