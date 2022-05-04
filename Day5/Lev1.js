@@ -50,3 +50,9 @@ for(let company of companies)
 {
     console.log(company);
 }
+// 11
+
+for(let company of companies)
+{
+    console.log(company.toUpperCase());
+}
