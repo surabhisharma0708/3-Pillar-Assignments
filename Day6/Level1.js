@@ -83,3 +83,9 @@ for(let x =0;x<=10;x++)
 {
     console.log(`${x}x${x}=${x*x}`);
 }
+//6
+console.log(`i  i^2   i^3`);
+for(let y=0;y<=10;y++)
+{
+    console.log(`${y}  ${y**2}      ${y**3}`);
+}
