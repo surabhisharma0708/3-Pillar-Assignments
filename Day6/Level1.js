@@ -78,3 +78,8 @@ for(i=1;i<=7;i++)
     }
     console.log(str);
 }
+//5
+for(let x =0;x<=10;x++)
+{
+    console.log(`${x}x${x}=${x*x}`);
+}
