@@ -131,3 +131,22 @@ for(c=0;c<=100;c++)
     sum=sum+c;
 }
 console.log(`The sum of all numbers from 0 to 100 is ${sum}`);
+//11
+let sum_even=0;
+let sum_odd=0;
+for(c=0;c<=100;c++)
+{
+    if(c%2==0)
+    {
+        sum_even+=c;
+    }
+    else
+    {
+        sum_odd+=c;
+    }
+}
+console.log(`The sum of all evens from 0 to 100 is ${sum_even}. And the sum of all odds from 0 to 100 is ${sum_odd}.`);
+
+//12
+let sum_arr=[sum_even,sum_odd];
+console.log(sum_arr);
