@@ -98,3 +98,11 @@ for(c=0;c<=100;c++)
         console.log(c);
     }
 }
+//8
+for(c=0;c<=100;c++)
+{
+    if(c%2!=0)
+    {
+        console.log(c);
+    }
+}
