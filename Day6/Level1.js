@@ -106,3 +106,21 @@ for(c=0;c<=100;c++)
         console.log(c);
     }
 }
+//9
+for(c=0;c<=100;c++)
+{
+    let flag=0;
+    for(let c1=2;c1<=i;c1++)
+    {
+        if(c%c1==0)
+        {
+            flag=1;
+            break;
+        }
+    }
+    if(i>1 && flag==0)
+    {
+        console.log(i);
+    }
+    
+}
