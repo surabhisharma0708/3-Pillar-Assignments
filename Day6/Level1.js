@@ -89,3 +89,12 @@ for(let y=0;y<=10;y++)
 {
     console.log(`${y}  ${y**2}      ${y**3}`);
 }
+//7
+let c;
+for(c=0;c<=100;c++)
+{
+    if(c%2==0)
+    {
+        console.log(c);
+    }
+}
