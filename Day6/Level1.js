@@ -124,3 +124,10 @@ for(c=0;c<=100;c++)
     }
     
 }
+//10
+let sum=0;
+for(c=0;c<=100;c++)
+{
+    sum=sum+c;
+}
+console.log(`The sum of all numbers from 0 to 100 is ${sum}`);
