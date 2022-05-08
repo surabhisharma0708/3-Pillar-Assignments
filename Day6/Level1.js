@@ -1,27 +1,4 @@
-// const countries = [
-//     'Albania',
-//     'Bolivia',
-//     'Canada',
-//     'Denmark',
-//     'Ethiopia',
-//     'Finland',
-//     'Germany',
-//     'Hungary',
-//     'Ireland',
-//     'Japan',
-//     'Kenya'
-// ]
-// const webTechs = [
-//     'HTML',
-//     'CSS',
-//     'JavaScript',
-//     'React',
-//     'Redux',
-//     'Node',
-//     'MongoDB'
-// ]
-  
-// const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+  // const mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
 // //1
 // for(let i=0;i<=10;i++)
