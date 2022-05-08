@@ -162,7 +162,7 @@
 var possible ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 var txt="";
 var len =6;
-for(c=0;c<6;c++)
+for(c=0;c<len;c++)
 {
     txt=txt+ possible.charAt(Math.floor(Math.random()*possible.length));
 }
