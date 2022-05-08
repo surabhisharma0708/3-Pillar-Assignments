@@ -6,8 +6,13 @@ function fullName(name)
 fullName("Surabhi");
 
 //2
-
+function fullNAme(first,last)
+{
+    console.log(`Full Name is : ${first} ${last}`);
+}
+fullNAme("Surabhi","Sharma");
 //3
+
 //4
 //5
 //6
