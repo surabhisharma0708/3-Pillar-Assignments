@@ -150,3 +150,11 @@ console.log(`The sum of all evens from 0 to 100 is ${sum_even}. And the sum of a
 //12
 let sum_arr=[sum_even,sum_odd];
 console.log(sum_arr);
+
+//13
+let ran_arr=[];
+for(c=1;c<5;c++)
+{
+    ran_arr.push(Math.floor(Math.random()));
+}
+console.log(ran_arr);

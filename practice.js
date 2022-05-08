@@ -13,3 +13,7 @@ function lcat(st)
 }
 const filtered = cats.filter(lcat);
 console.log(filtered);
+
+let original =[1,2,3];
+let doubled = original.map(item=>tem*2);
+console.log(doubled);
