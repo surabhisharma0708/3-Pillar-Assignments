@@ -12,5 +12,15 @@ dog.bark = function(){
 };
 
 //4
+console.log(Object.values(dog));
+
 //5
-//6
+dog.breed = "German-sheffard"
+dog.getDogInfo =function(){
+    let name = this.name;
+    let legs =this.legs;
+    let color = this.color;
+    let age = this.age;
+    let bark =this.bark;
+};
+console.log(Object.values(dog));

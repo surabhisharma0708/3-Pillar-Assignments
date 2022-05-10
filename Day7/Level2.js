@@ -1,0 +1,5 @@
+//1
+function solveInEquation()
+{
+    
+}
