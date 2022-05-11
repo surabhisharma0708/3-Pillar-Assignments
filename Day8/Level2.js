@@ -50,33 +50,49 @@ const users = {
     }
   };
 //1
+let data = Object.values(users);
 
 //2
-let c = 0;
-let k = Object.keys(users);
-for(let i of k)
+let c =0;
+
+for(let i=0;i<data.length;i++)
 {
-  if(i.isLoggedIn==true)
+  if(data[i].isLoggedIn==true)
   {
     c++;
   }
-
 }
 console.log(c);
-
+let p=0;
+for(let i=0;i<data.length;i++)
+{
+  if(data[i].points>=50)
+  {
+    p++;
+  }
+}
+console.log(p);
 //3
-
-
+let ar = Object.keys(users);
+let names = "";
+for(let i=0;i<data.length;i++)
+{
+  if(data[i].skills.includes("MongoDB") && data[i].skills.includes("Express") && data[i].skills.includes("React") && data[i].skills.includes("Node"))
+  {
+    names+=ar[i]+" ";
+  }
+}
+console.log(names);
 //4
 // let surabhi = {email:"surabhi@gmail.com",skills:['HTML','CSS','Javascript','Express'],age :19,isLoggedIn:true,points:60}; 
 // let myadd =Object.assign({surabhi},users);
 // console.log(myadd);
 // //5
 // let keys = Object.keys(users);
-// //console.log(keys);
+// console.log(keys);
 // //6
 // let value = Object.values(users);
-// //console.log(value);
+// console.log(value);
 // //7
 // let countries ={
 //   name: "India",
@@ -84,4 +100,4 @@ console.log(c);
 //   population : "1.3 crore",
 //   language : "Hindi" 
 // }
-// //console.log(countries);
+// console.log(countries);
