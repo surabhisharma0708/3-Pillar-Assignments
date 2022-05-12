@@ -6,7 +6,9 @@ filter: It filter out items which full fill filtering conditions and return a ne
 reduce: Reduce takes a callback function. The call back function takes accumulator, current, and optional initial value as a parameter and returns a single value. It is a good practice to define an initial value for the accumulator value. If we do not specify this parameter, by default accumulator will get array first value.
 */
 //2
+// callback function: A callback is a function which can be passed as parameter to other function.
 //3
+
 //4
 //5
 //6
