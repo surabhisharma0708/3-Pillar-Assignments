@@ -71,3 +71,41 @@ every : Check if all the elements are similar in one aspect. It returns boolean
 some : Check if some of the elements are similar in one aspect. It returns boolean
 */
 //20
+const leng = names.some((ele)=> ele.length>7)
+console.log(leng);
+//21
+const countall = countries.every((ele)=>ele.includes('land'));
+console.log(countall);
+//22
+/*
+find: returns the first element which satisfies the condition
+findIndex: return the position of the first ellement which satisfies the condition
+*/
+
+//23
+const first = countries.find((ele)=>ele.length===6)
+console.log(first);
+//24
+const firstpos = countries.find((ele)=>ele.length===6)
+console.log(firstpos);
+//25
+if(countries.includes("Norway"))
+{
+    const pos = countries.findIndex((ele)=>ele==="Norway");
+    console.log(pos);
+}
+else
+{
+    console.log(-1);
+}
+
+//26
+if(countries.includes("Russia"))
+{
+    const pos = countries.findIndex((ele)=>ele==="Russia");
+    console.log(pos);
+}
+else
+{
+    console.log(-1);
+}
