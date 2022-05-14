@@ -4,3 +4,4 @@ console.assert(10>2*10,"10 is less than 20");
 console.warn("This is a warning");
 
 //3
+console.error("This is an error");
