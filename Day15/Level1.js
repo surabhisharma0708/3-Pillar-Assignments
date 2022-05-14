@@ -21,6 +21,7 @@ class CAT extends Animal
 {
 
 }
+//Level-2
 class DOG extends Animal
 {
     constructor(name,age,color,legs,gender)
