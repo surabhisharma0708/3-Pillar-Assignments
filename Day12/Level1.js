@@ -20,3 +20,20 @@ sortedPoints.sort(function(a,b){return a-b});
 let a =Math.abs (sortedPoints[0]);
 let b =Math.abs(sortedPoints[sortedPoints.length-1]);
 console.log("distance"+a+b);
+
+//1
+let valid_pattern = /[A-Za-z]-?a-z/g;
+
+function isValid(name)
+{
+    if(name.match(valid_pattern))
+    {
+        console.log(true);
+    }
+    else
+    {
+        console.log(false);
+    }
+}
+let names = "surabhi";
+isValid(names);
