@@ -42,3 +42,10 @@ const countries_obj = [
     }]
 
 console.table(countries_obj);    
+
+//3
+console.group("Log_Group")
+console.log("Hello");
+console.log("Heyy");
+console.log("Hii");
+console.groupEnd();
