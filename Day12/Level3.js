@@ -3,3 +3,4 @@ let sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is no
 let cleanText = sentence.replace(/[%$@#&;,.]/g,'');
 console.log(cleanText);
 
+//2
