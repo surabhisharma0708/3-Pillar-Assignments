@@ -36,6 +36,29 @@
         paraAll[4].setAttribute('class','para');
         paraAll[4].setAttribute('id','fifthpara');
 
+        //Level2
+        //1
+        for(let i=0;i<paraAll.length;i++)
+        {
+            paraAll[i].style.color ='green';
+            paraAll[i].style.border='2px';
+            paraAll[i].style.backgroundColor ='yellow';
+            paraAll[i].style.fontSize ='24px';
+        }
+        //2
+
+        for(let i=0;i<paraAll.length;i++)
+        {
+            if(i%2==0)
+            {
+                paraAll[i].style.color ='green';
+            }
+            else
+            {
+                paraAll[i].style.color ='red';
+            }
+        }
+
     </script>
 </body>
 </html>
