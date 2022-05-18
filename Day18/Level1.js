@@ -5,5 +5,3 @@ fetch(countriesAPI)
         console.log(data);
     })
     .catch(error=>console.log(error))
-
-

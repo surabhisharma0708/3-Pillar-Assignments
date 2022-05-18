@@ -183,3 +183,39 @@ const users = {
 
 const txt = JSON.stringify(users,undefined,4);
 console.log(txt);
+
+//Promise
+
+const doPromise = new Promise((resolve, reject)=>
+{
+  setTimeout(()=>{
+    const skills =['HTML','CSS','JS'];
+    if(skills.length>0)
+    {
+      resolve(skills)
+    }
+    else
+    {
+      reject('Something wrong has happened');
+    }
+  },2000)
+})
+
+doPromise.then(result=>{console.log(result)}).catch(error=>console.log(error));
+
+let p = new Promise((resolve,reject)=>{
+  let a = 1+1
+  if(a==2)
+  {
+    resolve("Success");
+  }
+  else{
+    reject("Failed");
+  }
+})
+
+p.then((message)=>{
+  console.log('This is in the then'+message);
+}).catch((message)=>{
+  console.log('This is in the catch '+message);
+})
