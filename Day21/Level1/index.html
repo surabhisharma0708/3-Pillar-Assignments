@@ -22,7 +22,14 @@
         console.log(document.querySelector('#secondpara'));
         console.log(document.querySelector('#thirdpara'));
         console.log(document.querySelector('fourthpara'));
-
+        //3
+        const paraAll = document.querySelectorAll('p');
+        console.log(paraAll);
+        //4
+        for(let i=0;i<paraAll.length;i++)
+        {
+            console.log(paraAll[i].textContent);
+        }
     </script>
 </body>
 </html>
