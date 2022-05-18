@@ -7,14 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <p class="para">para-1</p>
-    <p class="para">para-2</p>
-    <p class="para">para-3</p>
-    <p class="para">para-4</p>
+    <p class="para" id="firstpara">para-1</p>
+    <p class="para" id="secondpara">para-2</p>
+    <p class="para" id="thirdpara">para-3</p>
+    <p class="para" id="fourthpara">para-4</p>
 
 
     <script>
+        //1
         const f_para= document.querySelector('p');
+        console.log(f_para);
+        //2
+        console.log(document.querySelector('#firstpara'));
+        console.log(document.querySelector('#secondpara'));
+        console.log(document.querySelector('#thirdpara'));
+        console.log(document.querySelector('fourthpara'));
+
     </script>
 </body>
 </html>
