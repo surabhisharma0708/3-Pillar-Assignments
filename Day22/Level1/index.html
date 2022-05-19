@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    table {
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-spacing: 10px;
+    }
+
+    table tbody td,
+    tr {
+
+        border: 2px solid black;
+        padding: 10px;
+        margin: 5px;
+
+
+    }
+
+    h2 {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <h1>NUMBER GENERATOR</h1>
+    <h2>30DaysOfJavascript:DOM Day2</h2>
+
+
+    <script>
+        let table = document.createElement("table")
+        let thead = document.createElement("thead")
+        let tbody = document.createElement("tbody")
+        table.appendChild(thead);
+        table.appendChild(tbody);
+        document.body.appendChild(table);
+        for (let i = 0; i < 102; i = i + 6) {
+
+            let tr = document.createElement("tr")
+            let th1 = document.createElement("td")
+
+            th1.innerHTML = `${i}`;
+            let th2 = document.createElement("td")
+
+            th2.innerHTML = `${i + 1}`;
+            let th3 = document.createElement("td")
+            th3.innerHTML = `${i + 2}`;
+            let th4 = document.createElement("td")
+            th4.innerHTML = `${i + 3}`;
+            let th5 = document.createElement("td")
+            th5.innerHTML = `${i + 4}`;
+            let th6 = document.createElement("td")
+            th6.innerHTML = `${i + 5}`;
+
+            tr.appendChild(th1);
+            tr.appendChild(th2);
+            tr.appendChild(th3);
+            tr.appendChild(th4);
+            tr.appendChild(th5);
+            tr.appendChild(th6);
+
+            tbody.appendChild(tr);
+
+        }
+
+        let ttt = document.getElementsByTagName("table").getElementsByTagName("td");
+
+        for (let i = 0; i < 102; i++) {
+            if (i >= 2) {
+                let flag = true;
+                if (i == 2) {
+                    ttt[i].style.backgroundColor = "red";
+                }
+                else {
+                    for (let k = 2; k < i; k++) {
+                        if (i % k == 0) {
+                            flag = false;
+                            break;
+                        }
+                    }
+                    if (flag == true)
+                        ttt[i].style.backgroundColor = "red";
+
+                }
+            }
+            else if (i % 2 == 0) {
+                ttt[i].style.backgroundColor = "green";
+            }
+            else {
+                ttt[i].style.backgroundColor = "yellow";
+            }
+
+        }
+
+            
+        
+
+
+    </script>
+</body>
+
+</html>
