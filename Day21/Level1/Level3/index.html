@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript for Everyone:DOM</title>
+</head>
+<style>
+    body {
+        text-align: center;
+
+    }
+
+    .wrapper ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.7;
+
+    }
+
+    .wrapper ul li {
+
+        list-style: none;
+        padding: 10px;
+        margin: 2px;
+        border: 2px solid none;
+        width: 800px;
+        height: 50px;
+        text-align: left;
+    }
+
+    h2 {
+        text-decoration: underline;
+    }
+    p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        width: 200px;
+        height: 30px;
+        text-align: center;
+        margin-left: 650px;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <h1>Asabeneh Yetayeh challenges in <span style="font-size: 55px">2020</span></h1>
+        <h2>30DaysOfJavascript Challenge</h2>
+        <ul>
+            <li>30DaysOfPython Challenge Done</li>
+            <li>30DaysOfJavascript Challenge Ongoing</li>
+            <li>30DaysOfReact Challenge Coming</li>
+            <li>30DaysOfFullstack Challenge Coming</li>
+            <li>30DaysOfDataAnalysis Challenge Coming</li>
+            <li>30DaysOfReactNative Challenge Coming</li>
+            <li>30DaysOfMachineLearning Challenge Coming</li>
+        </ul>
+    </div>
+
+    <script>
+        const lis = document.querySelectorAll('li');
+        for (let i = 0; i < lis.length; i++) {
+            if (lis[i].textContent.includes("Done")) {
+                lis[i].style.backgroundColor = "green";
+            }
+            else if (lis[i].textContent.includes("Ongoing")) {
+                lis[i].style.backgroundColor = "yellow";
+            }
+            else if (lis[i].textContent.includes("Coming")) {
+                lis[i].style.backgroundColor = "red";
+            }
+
+        }
+
+
+        var colors = ["blue", "yellow", "pink", "purple"]
+        let currentColor = 0
+        var liss = document.getElementsByTagName("span")
+
+        function changeColor() {
+            --currentColor
+            if (currentColor < 0) currentColor = colors.length - 1
+            for (var i = 0; i < liss.length; i++) {
+                liss[i].style.color = colors[(currentColor + i) % colors.length]
+            }
+        }
+
+        setInterval(changeColor, 1000)
+
+        const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        const date = new Date();
+        const mon = month[date.getMonth()];
+        const day = date.getDate();
+        const year = date.getFullYear();
+        const hour = date.getHours();
+        const min = date.getMinutes();
+        const sec = date.getSeconds();
+
+        let para = document.createElement("p");
+        let node = document.createTextNode(`${mon} ${day}, ${year} ${hour}:${min}:${sec}`);
+        para.appendChild(node);
+        const ele = document.querySelector(".wrapper")
+        const child = document.querySelector("ul");
+        ele.insertBefore(para,child);
+        
+
+        var pp = document.getElementsByTagName("p")
+        var colorss = ["orange", "mauve", "magenta", "purple"]
+        let cc =0
+        function changeColors() {
+            --cc
+            if (cc < 0) cc = colorss.length - 1
+            for (var i = 0; i < pp.length; i++) {
+                pp[i].style.backgroundColor = colorss[(cc + i) % colorss.length]
+            }
+        }
+
+        setInterval(changeColors, 1000)
+
+
+    </script>
+</body>
+
+</html>

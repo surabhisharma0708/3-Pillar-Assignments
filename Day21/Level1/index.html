@@ -58,7 +58,13 @@
                 paraAll[i].style.color ='red';
             }
         }
-
+        //3
+        for(let i=0;i<paraAll.length;i++)
+        {
+            paraAll[i].setAttribute('class','para');
+            paraAll[i].setAttribute('id',`para${i+1}`);
+            paraAll[i].textContent =`paragraph${i+1}`
+        }
     </script>
 </body>
 </html>
