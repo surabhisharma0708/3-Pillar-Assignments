@@ -10,6 +10,7 @@
 <style>
     body {
         text-align: center;
+        background-color: rgb(241, 237, 230);
     }
 
     table {
@@ -24,9 +25,11 @@
     table tbody td,
     tr {
 
-        border: 2px solid black;
+        border: 2px solid none;
         padding: 10px;
         margin: 5px;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
 
 
     }
@@ -77,9 +80,16 @@
 
         }
 
-        let ttt = document.getElementsByTagName("table").getElementsByTagName("td");
+        let ttt = document.getElementsByTagName("td");
 
-        for (let i = 0; i < 102; i++) {
+        for (let i = 0; i < 102; i++) 
+        {
+            if (i % 2 == 0) {
+                ttt[i].style.backgroundColor = "green";
+            }
+            else if(i % 2 != 0) {
+                ttt[i].style.backgroundColor = "rgb(224, 224, 5)";
+            }
             if (i >= 2) {
                 let flag = true;
                 if (i == 2) {
@@ -97,12 +107,7 @@
 
                 }
             }
-            else if (i % 2 == 0) {
-                ttt[i].style.backgroundColor = "green";
-            }
-            else {
-                ttt[i].style.backgroundColor = "yellow";
-            }
+            
 
         }
 
