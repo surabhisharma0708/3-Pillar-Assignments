@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    h1 {
+        color: rgb(10, 140, 43);
+    }
+
+    button {
+        background-color: rgb(10, 140, 43);
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    input {
+        width: 600px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    label {
+        float: left;
+        margin-left: 340px;
+        color: red;
+    }
+
+    table {
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-spacing: 10px;
+    }
+
+    tbody {
+        padding: 10px;
+        margin: 5px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    td,
+    tr {
+
+        border: 2px solid black;
+        padding: 10px;
+        margin: 5px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+
+
+    }
+</style>
+
+<body>
+    <h1>Number Generator</h1>
+    <h2>30DaysOfJavaScript: DOM Day 3</h2>
+    <p>Author:Asabeneh Yetayeh</p>
+    <div>
+        <label id="labell">Enter a input value:</label>
+        <br>
+        <input type="text" placeholder="Enter a number">
+        <button>Generate numbers</button>
+    </div>
+    <script>
+        let fetchedVal = document.querySelector('input');
+        let butt = document.querySelector('button');
+
+
+
+        let table = document.createElement('table')
+        let tbody = document.createElement('tbody')
+        table.appendChild(tbody);
+        document.body.appendChild(table);
+
+        butt.addEventListener('mouseenter', () => {
+            butt.style.backgroundColor = "rgb(91, 151, 31)";
+        })
+        butt.addEventListener('mouseleave', () => {
+            butt.style.backgroundColor = "green";
+        })
+
+
+        butt.addEventListener('click', () => 
+        {
+            //console.log(fetchedVal.value+typeof(fetchedVal.value));
+
+            var input = fetchedVal.value;
+            if (!parseInt(input)) {
+                document.getElementById("labell").innerHTML = "Please Enter A Number"
+            }
+            for (let i = 0; i <= fetchedVal.value; i = i + 9) {
+
+                let tr = document.createElement('tr');
+                let td1 = document.createElement('td');
+                if (i == fetchedVal.value)
+                    break;
+                else {
+
+                    td1.innerHTML = `${i}`;
+                    tr.appendChild(td1);
+                    tbody.appendChild(tr);
+                    
+                }
+                let td2 = document.createElement('td');
+                if (i + 1 == fetchedVal.value)
+
+                    break;
+                else {
+                    td2.innerHTML = `${i + 1}`;
+                    tr.appendChild(td2);
+                    tbody.appendChild(tr);
+                }
+
+                let td3 = document.createElement('td');
+                if (i + 2 == fetchedVal.value)
+                    break;
+                else {
+                    td3.innerHTML = `${i + 2}`;
+                    tr.appendChild(td3);
+                    tbody.appendChild(tr);
+                }
+
+                let td4 = document.createElement('td');
+                if (i + 3 == fetchedVal.value)
+                    break;
+                else {
+                    td4.innerHTML = `${i + 3}`;
+                    tr.appendChild(td4);
+                    tbody.appendChild(tr);
+                }
+
+                let td5 = document.createElement('td');
+                if (i + 4 == fetchedVal.value)
+                    break;
+                else {
+
+                    td5.innerHTML = `${i + 4}`;
+                    tr.appendChild(td5);
+                    tbody.appendChild(tr);
+                }
+
+                let td6 = document.createElement('td');
+                if (i + 5 == fetchedVal.value)
+                    break;
+                else {
+
+                    td6.innerHTML = `${i + 5}`;
+                    tr.appendChild(td6);
+                    tbody.appendChild(tr);
+                }
+
+                let td7 = document.createElement('td');
+                if (i + 6 == fetchedVal.value)
+                    break;
+                else {
+                    td7.innerHTML = `${i + 6}`;
+                    tr.appendChild(td7);
+                    tbody.appendChild(tr);
+                }
+
+                let td8 = document.createElement('td');
+                if (i + 7 == fetchedVal.value)
+                    break;
+                else {
+
+                    td8.innerHTML = `${i + 7}`;
+                    tr.appendChild(td8);
+                    tbody.appendChild(tr);
+                }
+
+                let td9 = document.createElement('td');
+                if (i + 8 == fetchedVal.value)
+                    break;
+                else {
+
+                    td9.innerHTML = `${i + 8}`;
+                    tr.appendChild(td9);
+                    tbody.appendChild(tr);
+                }
+
+
+            }
+
+            
+                let tagele = document.getElementsByTagName('tbody').getElementsByTagName('td');
+                for (let k = i; k < 9; k++) {
+                    if (k % 2 == 0) {
+                        tagele[k].style.backgroundColor = "green"
+                    }
+                    else if (k % 2 != 0) {
+                        tagele[k].style.backgroundColor = "yellow"
+                    }
+                    if (k >= 2) {
+                        let flag = true;
+                        if (k == 2) {
+                            tagele[k].style.backgroundColor = "red";
+                        }
+                        for (let j = 2; j < k; j++) {
+                            if (k % j == 0) {
+                                flag = false;
+                                break;
+                            }
+
+                        }
+                        if (flag == true)
+                            tagele[k].style.backgroundColor = "red";
+                    }
+
+        }
+            
+            
+                
+
+
+
+        })
+
+
+    </script>
+</body>
+
+</html>

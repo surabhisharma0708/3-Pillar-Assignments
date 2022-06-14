@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        border: 2px solid black;
+        padding: 20px;
+        text-align: center;
+        margin-top: 25px;
+    }
+</style>
+<body>
+    <button>Click me</button>
+
+    <script>
+        let item = document.querySelector('button');
+        item.addEventListener('onclick', e=>{
+            item.style.backgroundColor = 'green';
+        })
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+  </head>
+
+  <body>
+    <h1>Key events: Press any key</h1>
+
+    <script>
+      document.body.addEventListener('keypress', e => {
+        alert(e.keyCode)
+      })
+    </script>
+  </body>
+</html>
