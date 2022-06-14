@@ -1,0 +1,6 @@
+1. Find the domestic and international sales for each movie ✓
+SELECT Title,Domestic_sales,International_sales FROM movies JOIN Boxoffice on Id=Movie_id;
+2. Show the sales numbers for each movie that did better internationally rather than domestically ✓
+SELECT Title,Domestic_sales,International_sales FROM movies JOIN Boxoffice on Id=Movie_id WHERE Domestic_sales<International_sales;
+3. List all the movies by their ratings in descending order ✓
+SELECT Title,Rating FROM movies JOIN Boxoffice on Id=Movie_id ORDER BY Rating DESC;
