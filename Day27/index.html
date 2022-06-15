@@ -49,6 +49,13 @@
         font-size: 20px;
         background-color: rgb(248, 245, 245);
         border-radius: 6px;
+
+    }
+    .inner p:hover{
+        cursor: pointer;
+        filter: brightness(90%);
+        transform: scale(1.2);
+        background-color: rgb(225, 242, 243);
     }
     .last{
         padding-right: 850px;
@@ -60,6 +67,7 @@
     }
     .outer pre{
         font-size: 17px;
+        /* color: rgb(95, 95, 179); */
 
     }
 </style>
@@ -83,13 +91,69 @@ challege and in January 2020 <b>30 Days Of Javascript </b>challenge.
 
 </body>
 <script>
-    const spa = document.getElementsByClassName('last')
-    setInterval(function () {
-       let x = spa[0];
-       if(x.textContent=="NODE")
-       {
-            x.textContent="JAVASCRIPT"
-       }
-    },1000); 
+    var hh = document.getElementsByTagName('h3')
+    setInterval(function(){
+        let x = hh[0];
+        if(x.innerHTML =='Instructor')
+        {
+            x.innerHTML ='Motivational Speaker';
+        }
+        else if(x.innerHTML =='Motivational Speaker')
+        {    
+           x.innerHTML ='Content Creator';
+        }
+        else if(x.innerHTML =='Content Creator')
+        {    
+           x.innerHTML ='Motivator';
+        }
+        else if(x.innerHTML =='Motivator')
+        {
+            x.innerHTML ='Programmer';   
+        }
+        else if(x.innerHTML =='Programmer')
+        {
+            x.innerHTML ='Educator';
+        }
+        else if(x.innerHTML =='Educator')
+        {
+            x.innerHTML = 'Instructor';
+        }
+    },1050);
+     
+
+     var ss = document.getElementsByClassName('sp1');
+     setInterval(function(){
+        var y = ss[0];
+        if(y.innerHTML='NODE')
+        {
+            y.innerHTML='REACT'
+        }
+        else if(y.innerHTML='REACT')
+        {
+            y.innerHTML='JAVASCRIPT'
+        }
+        else if(y.innerHTML='JAVASCRIPT')
+        {
+            y.innerHTML='REDUX'
+        }
+        else if(y.innerHTML='REDUX')
+        {
+            y.innerHTML='PYTHON'
+        }
+        else if(y.innerHTML='PYTHON')
+        {
+            y.innerHTML='MONGODB'
+        }
+        else if(y.innerHTML='MONGODB')
+        {
+            y.innerHTML='PANDAS'
+        }
+        else if(y.innerHTML='PANDAS')
+        {
+            y.innerHTML='NODE'
+        }
+     },1000)
+
+     
 </script>
 </html>
