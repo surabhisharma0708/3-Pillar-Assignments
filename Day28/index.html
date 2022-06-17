@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .outer{
+        text-align: center;
+        margin: 90px;
+    
+    }
+    h2{
+        font-size: 40px;
+    }
+    input{
+        font-size: 20px;
+        padding: 12px;
+        margin: 5px;
+        border:2px solid rgb(185, 177, 177);
+        border-radius: 8px;
+
+
+    }
+    
+    button{
+        font-size: 20px;
+        padding: 12px;
+        margin: 5px;
+        border-radius: 8px;
+        border:2px solid rgb(234, 203, 203);
+        background-color: rgb(234, 203, 203);
+    }
+</style>
+<body>
+    <div class="outer">
+        <h2>30 DAYS OF JAVASCRIPT</h2>
+        <form>
+
+            <input id="first" type="text" placeholder="First Name" value="val">
+            <input id="second"type="text" placeholder="Last Name">
+            <input id="country" type="text" placeholder="Country">
+            <input id="score" type="text" placeholder="Player Score">
+            <button id="button" type="submit" >ADD PLAYER</button>
+        </form>
+    </div>
+</body>
+<script>
+    let table = document.createElement("table");
+    let tbody = document.createElement("tbody");
+    table.appendChild(tbody);
+    document.body.appendChild(table);
+
+    
+    
+    var button  = document.getElementById("button");
+    var first =document.getElementById("first").value;
+    var second = document.getElementById("second");
+    var third = document.getElementById("country");
+    var four = document.getElementById("score");
+    console.log(first);
+
+    button.addEventListener('click',()=>{
+        let tr = document.createElement("tr");
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        td1.innerHTML=`${first}`;
+        td2.innerHTML=`${second}`;
+        td3.innerHTML = `${third}`;
+        td4.innerHTML =`${four}`;
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+
+        tbody.appendChild(tr);
+    })
+</script>
+</html>
