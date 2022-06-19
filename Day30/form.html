@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fresca&family=Josefin+Sans:wght@100;200;300;400;500;700&family=Potta+One&display=swap"
+        rel="stylesheet">
     <title>Form</title>
 </head>
 <style>
+    body{
+        font-family: 'Josefin Sans', sans-serif;
+    }
     h1{
         text-align: center;
     }
     form{
-        margin-top: 100px;
+        margin-top: 60px;
         margin-left: 600px;
     }
     input{
         margin: 10px;
-        font-size: 25px;
+        font-size: 20px;
     }
     label{
-        font-size: 30px;
+        font-size: 20px;
         margin-left: 5px;
     }
     button{
-        margin: 10px;
+       
         font-size: 25px;
         border-radius: 8px;
         padding: 8px;
@@ -95,6 +101,7 @@
 
             //for email 
             let p3 = document.getElementById("p3");
+            p3.style.color="orange";
             let pattern = "[a-z0-9._%+-]+@[a-z]+\.[a-z]";
             if(z=="")
             {
@@ -106,7 +113,10 @@
             }
 
             //for password
+            let p4 = document.getElementById("p4");
+            p4.style.color="orange";
             let paspat = "[A-Z{1}a-z0-9@-_]";
+            p4.style.color="orange";
             if(a=="")
             {
                 p4.innerHTML="Please fill the password field";
@@ -123,6 +133,7 @@
             }
             //for telephone
             let p5 = document.getElementById("p5");
+            p5.style.color="orange";
             if(b=="")
             {
                 p5.innerHTML= "Please fill the telephone field"
@@ -133,6 +144,7 @@
             }
             //for bio
             let p6 = document.getElementById("p6");
+            p6.style.color="orange";
             let biopat ="[a-z-_]";
             if(c!=biopat)
             {
