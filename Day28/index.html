@@ -37,30 +37,31 @@
 <body>
     <div class="outer">
         <h2>30 DAYS OF JAVASCRIPT</h2>
-        <form>
+        <form name="form">
 
-            <input id="first" type="text" placeholder="First Name" value="val">
-            <input id="second"type="text" placeholder="Last Name">
-            <input id="country" type="text" placeholder="Country">
-            <input id="score" type="text" placeholder="Player Score">
+            <input id="first" name="first" type="text" placeholder="First Name">
+            <input id="second" name="second" type="text" placeholder="Last Name">
+            <input id="country" name="country" type="text" placeholder="Country">
+            <input id="score" name="score" type="text" placeholder="Player Score">
             <button id="button" type="submit" >ADD PLAYER</button>
         </form>
     </div>
 </body>
 <script>
+    let x = document.forms["form"];
+    var first = x["first"].value;
+    var second = x["second"].value;
+    var third = x["country"].value;
+    var four = x["score"].value;
     let table = document.createElement("table");
     let tbody = document.createElement("tbody");
     table.appendChild(tbody);
     document.body.appendChild(table);
 
-    
-    
+
+
     var button  = document.getElementById("button");
-    var first =document.getElementById("first").value;
-    var second = document.getElementById("second");
-    var third = document.getElementById("country");
-    var four = document.getElementById("score");
-    console.log(first);
+    
 
     button.addEventListener('click',()=>{
         let tr = document.createElement("tr");
@@ -79,6 +80,7 @@
         tr.appendChild(td4);
 
         tbody.appendChild(tr);
+        
     })
 </script>
 </html>
