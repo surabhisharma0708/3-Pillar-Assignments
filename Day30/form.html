@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    form{
+        margin-top: 100px;
+        margin-left: 600px;
+    }
+    input{
+        margin: 10px;
+        font-size: 25px;
+    }
+    label{
+        font-size: 30px;
+        margin-left: 5px;
+    }
+    button{
+        margin: 10px;
+        font-size: 25px;
+        border-radius: 8px;
+        padding: 8px;
+        background-color: rgb(216, 150, 27);
+    }
+</style>
+<body>
+    <h1>Validating Web Forms</h1>
+    <form name="myForm">
+        <label for="first">First Name</label><br>
+        <input type="text"name="first" id="first" placeholder="First Name"><br>
+        <label for="last">Last Name</label><br>
+        <input type="text" name="last" id="last" placeholder="Last Name"><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Email"><br>
+        <label for="pass">Password</label><br>
+        <input type="password" name="pass" id="pass" placeholder="Password"><br>
+        <label for="tele">Telephone</label><br>
+        <input type="number" name="tele" id="tele" placeholder="Telephone"><br>
+        <label for="bio">Your bio</label><br>
+        <input type="text" name="bio" id="bio" placeholder="bio">
+        <br>
+        <button id="but">Submit</button>
+    </form>
+
+    <script>
+        
+        let button = document.getElementById("but");
+        button.addEventListener('click',()=>{
+            let x = document.forms["myForm"]["first"];
+            let p = document.createElement("p")
+            if(x=="")
+            {
+                alert("Please fill the first name")
+                // p.innerHTML="Please fill the first name"
+            }
+
+        })
+    </script>
+</body>
+</html>
