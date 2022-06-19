@@ -32,36 +32,124 @@
 </style>
 <body>
     <h1>Validating Web Forms</h1>
-    <form name="myForm">
+    <form name="myForm" id="form">
         <label for="first">First Name</label><br>
         <input type="text"name="first" id="first" placeholder="First Name"><br>
+        <p id="p1"></p>
         <label for="last">Last Name</label><br>
         <input type="text" name="last" id="last" placeholder="Last Name"><br>
+        <p id="p2"></p>
         <label for="email">Email</label><br>
         <input type="email" name="email" id="email" placeholder="Email"><br>
+        <p id="p3"></p>
         <label for="pass">Password</label><br>
         <input type="password" name="pass" id="pass" placeholder="Password"><br>
+        <p id="p4"></p>
         <label for="tele">Telephone</label><br>
         <input type="number" name="tele" id="tele" placeholder="Telephone"><br>
+        <p id="p5"></p>
         <label for="bio">Your bio</label><br>
         <input type="text" name="bio" id="bio" placeholder="bio">
+        <p id="p6"></p>
         <br>
         <button id="but">Submit</button>
     </form>
 
     <script>
-        
+        let p = document.createElement("p")
+                p.innerHTML="Please fill the first name"
+                console.log(p);
         let button = document.getElementById("but");
+        let t = document.forms["myForm"];
+        let x = t["first"].value;
+        let y =t["last"].value;
+        let z =t["email"].value;
+        let a = t["pass"].value;
+        let b = t["tele"].value;
+        let c = t["bio"].value;
+
         button.addEventListener('click',()=>{
-            let x = document.forms["myForm"]["first"];
-            let p = document.createElement("p")
+            // for first name
+            let p = document.getElementById("p1");
+            p.style.color="orange";
             if(x=="")
             {
-                alert("Please fill the first name")
-                // p.innerHTML="Please fill the first name"
+                p.innerHTML="Please fill the first name";
+            }
+            if(x.length>2 && x.length<17)
+            {
+                p.innerHTML="First Name must be alphanumeric and contain 3-16 characters";
             }
 
+            //for last name
+            let p2 = document.getElementById("p2");
+            p2.style.color="orange";
+            if(y=="")
+            {
+                p2.innerHTML="Please fill the last name";
+            }
+            else if(x.length>2 && x.length<17)
+            {
+                p2.innerHTML="Last Name must be alphanumeric and contain 3-16 characters";
+            }
+
+            //for email 
+            let p3 = document.getElementById("p3");
+            let pattern = "[a-z0-9._%+-]+@[a-z]+\.[a-z]";
+            if(z=="")
+            {
+                p3.innerHTML="Please fill the email field";
+            }
+            else if(z!=pattern)
+            {
+                p3.innerHTML = "Email must be valid";
+            }
+
+            //for password
+            let paspat = "[A-Z{1}a-z0-9@-_]";
+            if(a=="")
+            {
+                p4.innerHTML="Please fill the password field";
+
+            }
+            else if(a!=paspat)
+            {
+                p4.innerHTML="Password must be alphanumneric";
+
+            }
+            else if(a.length>5 && a.length<21)
+            {
+                p4.innerHTML="Length of password must lie between 6 to 20";
+            }
+            //for telephone
+            let p5 = document.getElementById("p5");
+            if(b=="")
+            {
+                p5.innerHTML= "Please fill the telephone field"
+            }
+            else if(b.length!=10)
+            {
+                p5.innerHTML="A valid phone number must contain 10 digits";
+            }
+            //for bio
+            let p6 = document.getElementById("p6");
+            let biopat ="[a-z-_]";
+            if(c!=biopat)
+            {
+                p6.innerHTML="Bio must contain only lowercase, underscore,hyphen"
+            }
+            else if(c=="")
+            {
+                p6.innerHTML="Please fill the bio field";
+            }
+            else if(c.length<50 && c.length >7)
+            {
+                p6.innerHTML="Length must be between 8-50";
+            }
+
+
         })
+        
     </script>
 </body>
 </html>
