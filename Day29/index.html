@@ -30,25 +30,45 @@
 
         
             
-            //console.log(myRandomColor)
-        for(let i =0;i<head1.textContent.length;i++)
+            // console.log(myRandomColor)
+            
+            var t = head1.textContent.trim;
+        for(let i =0;i<t.length;i++)
         {
-            var t = head1.innerHTML[i];
-            // var myRandomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-            t.style.color = 'green';
-            console.log(t+typeof(t));
+            
+            setInterval(()=>{
+                var myRandomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+                t.style.color = myRandomColor;
+                console.log(t[i])
+           },1000)
         }
-        for(let i =0;i<head2.textContent.length;i++)
+        var t1 = head2.textContent.trim;
+        for(let i =0;i<t1.length;i++)
         {
-            var t = head2.textContent[i];
+            
+            setInterval(()=>{
+                 var myRandomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+                 t1[i].style.color = myRandomColor;
+
+             },1000)
         }
-        for(let i =0;i<head3.textContent.length;i++)
+        var t2 = head3.textContent.trim;
+        for(let i =0;i<t2.length;i++)
         {
-            var t = head2.textContent[i];
+            setInterval(()=>{
+                 var myRandomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+                 t2[i].style.color = myRandomColor;
+
+             },1000)
         }
-        for(let i =0;i<head4.textContent.length;i++)
+        var t3 = head4.textContent.trim;
+        for(let i =0;i<t3.length;i++)
         {
-            var t = head4.textContent[i];
+            setInterval(()=>{
+                 var myRandomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+                 t3[i].style.color = myRandomColor;
+
+             },1000)
         }
     </script>
 </body>
